@@ -9,7 +9,17 @@
 {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google-analytics.html -%}
 {%- endif -%}
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ea892c10384d4fb0964b76112b08bdd1";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
-<link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}">
+
+  <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}">
 <noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css' | relative_url }}" /></noscript>
 </head>
