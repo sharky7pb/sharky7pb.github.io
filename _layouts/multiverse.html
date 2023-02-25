@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-//dsadasddasda
 <html lang="{{ page.lang | default: site.lang | default: "en"}}">
 
   {%- include head.html -%}
@@ -21,12 +20,13 @@
         </article>
         {% endfor %}
 
+
         <!-- no idea where to put this... -->
         <!-- {{ content }} -->
       </div>
 
       {%- include footer.html -%}
-
+      {% include comment.html %}
     </div>
 
     <script src="{{ 'assets/js/jquery.min.js' | relative_url }}"></script>
